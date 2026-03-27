@@ -1,0 +1,473 @@
+/*importações*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color:#0E2F76;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:#0E2F76;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    color:#1a4ed8;
+}
+
+.btn-header{
+    padding: 10px 20px;
+    border: none;
+    background-color:#0E2F76;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-header:hover{
+    background-color:#1a4ed8;
+}
+
+/*section-home*/
+
+.section-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#AAC0E1;
+    color:#0E2F76;
+    text-align: center;
+}
+
+.btns-contato-saibamais{
+    display: flex;
+    justify-content: center;
+    gap: 90px 80px;
+}
+
+.btn-contatos{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color:#0E2F76;
+    font-size: 18px;
+    padding: 12px;
+    margin: 10px 5px 10px 5px;
+}
+
+.container-btn-text h1{
+    font-size: 40px;
+    font-style: normal; 
+}
+
+.container-text-home{
+    font-style: normal;
+    font-size: 80px;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color:#F5FEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10ch;  
+    left: 50%;
+    transform: translate(-50%);
+}
+/*section-about*/
+
+.section-about{
+    width: 100%;
+    height: 100vh;
+    background-color:#0E2F76;
+    color:#AAC0E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-about p{
+    font-size: 60px;
+    text-align: center;
+    width: 90%;
+}
+
+/*section-skills*/
+
+.section-skills{
+    background-color:#AAC0E1;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-text-skills{
+    position: relative;
+    top: -50vh;
+    left: 5vh;
+}
+
+.container-skills-comunication{
+    position: relative;
+    left: 15vh;
+    top: -45vh;
+    width: 500px;
+}
+
+.container-box-comunication{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px 10px;
+    height: 600px;
+}
+
+.box-Comunica{
+    background-color:#0E2F76;
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+}
+
+.btn-comun{
+    width: 100%;
+    grid-column: span 2;
+}
+
+.btn-comunication{
+    width: 99%;
+    height: 70px;
+    background-color:#0E2F76;
+    position: relative;
+    top: 25vh;
+    border-radius: 25px;
+    border: none;
+
+}
+
+.container-text-skills{
+    width: 500px;
+    position: relative;
+}
+
+.container-text-skills p{
+    font-style: normal;     
+    color:#0E2F76;
+    font-size: 80px;
+    width: 500px;
+}
+
+.container-habilidades{
+    width: 100%;
+    height: 100vh;
+}
+
+.container-skills{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-auto-rows: 100px;
+    gap: 10px 10px;
+    position: relative;
+    left: 65%;
+    top: 10vh;
+    width: 420px;
+}
+
+.container-skills .boxSkills{
+    width: 100px;
+    height: 100px;
+    background-color:#0E2F76;
+    color:#F5FEFF;
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*section design*/
+.section-projetos{
+    width: 100%;
+    height: 100vh;
+    background-color: #0E2F76;
+    color:#F5FEFF;
+    overflow: hidden;
+}
+
+.section-projetos .container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 70%;
+    top: 5%;
+}
+
+.section-projetos .container h1{
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: -20px;
+}
+
+.section-projetos .container button{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #AAC0E1;
+    color: #0E2F76;
+    font-size:24px;
+}
+
+.number1{
+    font-size: 40px;
+    font-style: normal;
+    position: relative;
+    top: -150vh;
+    left: 450px;
+    width: 100px;
+}
+
+.number2{
+    font-size: 40px;
+    font-style: normal;
+    position: relative;
+    top: -90vh;
+    left: 30vh;
+    width: 100px;
+    
+}
+
+.number3{
+    font-size: 40px;
+    font-style: normal;
+    position: relative;
+    top: -120vh;
+    left: 80%; 
+}
+
+.svg{
+    position: relative;
+    top: -50.7%;
+    width: 100%;
+}
+
+/*section ideias*/
+
+.section-ideias{
+    width: 100%;
+    height: 130vh;
+    background-color: #F5FEFF;
+    color: #0E2F76;
+}
+
+.section-ideias .text-box{
+    width: 80%;
+    height: auto;
+    padding: 12px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 20%);
+}
+
+.section-ideias .text-box p{
+    font-style: normal;
+    font-size: 32px;
+    text-align: justify;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px 250px;
+    grid-auto-rows: 100px;
+    gap: 130px 10px;
+    position: relative;
+    left: 5%;
+    top: 30%;
+    width: 500px;
+    height: 700px;
+}
+
+.boxItem{
+    background-color: #0E2F76;
+    border-radius: 50px;
+    height:200px;
+}
+
+
+.item3{
+    grid-column: span 2;
+}
+
+.item4{
+    grid-column: span 2;
+}
+
+.item6{
+    grid-column: span 3;
+}
+
+.item1{
+    grid-row: span 3;
+    grid-column: span 3;
+    height: 660px;
+    margin-right: 15px; 
+}
+/*section fundador*/
+
+.section-fundador{
+    width: 100%;
+    height: 100vh;
+    background-color: #AAC0E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-fundador .container{
+    width: 750px;
+    height: 700px;
+    text-align: center;
+    margin-left: -700px;
+}
+
+.section-fundador .container h1{
+    position: relative;
+    top: 0;
+    left: 45%;
+    color: #0E2F76;
+    margin-bottom: 50px;
+}
+
+.section-fundador .container p{
+    font-style: normal;
+    font-size: 32px;
+    text-align: justify;
+    color: #0E2F76;
+
+}
+
+.section-fundador .container-links{
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    color: #0E2F76;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.section-fundador .container-links a{
+    font-style: normal;
+    font-size: 38px;
+    color: #0E2F76;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.section-fundador .container-links a:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    color:#F5FEFF;
+}
+
+/*section final*/
+
+.section-final{
+    width: 100%;
+    height: 50vh;
+    background-color: #0E2F76;
+    text-align: center;
+    color: #F5FEFF;
+    
+}
+
+.container{
+    width: 100%;
+    height: 50vh;
+}
+
+.container h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 121px;
+}
+.container h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 121px;
+    margin-top: -40px;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 260px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #0E2F76;
+}
+
+.btn .circle-btn{
+    height: 45px;
+    width: 45px;
+    background-color: #AAC0E1;
+    color: #0E2F76;
+    margin-right: -60px;    
+    margin-left: 40px;
+}
